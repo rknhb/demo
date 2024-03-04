@@ -1,0 +1,41 @@
+/*base.css:2*/
+:root {
+    --alpha-button-background: 1;
+    --alpha-button-border: 1;
+    --alpha-link: .85;
+    --alpha-badge-border: .1;
+}
+
+/*base.css:255*/
+::selection {
+    background-color: rgba(var(--color-foreground),.2);
+}
+
+/*base.css:591*/
+:root {
+    --duration-short: .1s;
+    --duration-default: .2s;
+    --duration-announcement-bar: .25s;
+    --duration-medium: .3s;
+    --duration-long: .5s;
+    --duration-extra-long: .6s;
+    --duration-extended: .3s;
+    --ease-out-slow: cubic-bezier(0, 0, .3, 1);
+    --animation-slide-in: slideIn var(--duration-extra-long) var(--ease-out-slow) forwards;
+    --animation-fade-in: fadeIn var(--duration-extra-long) var(--ease-out-slow);
+}
+
+/*base.css:591*/
+.gradient {
+    background: rgb(var(--color-background));
+    background: var(--gradient-background);
+    background-attachment: fixed;
+}
+
+/*base.css:3461*/
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+    :root {
+        --easter-egg: none;
+        --sparkle: url(./sparkle.gif);
+    }
+}
